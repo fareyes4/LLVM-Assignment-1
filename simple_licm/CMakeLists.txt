@@ -1,2 +1,7 @@
-add_library(SimpleLICM MODULE SimpleLICM.cpp)
-target_link_libraries(SimpleLICM PRIVATE LLVM)
+add_llvm_library(SimpleLICM MODULE
+  SimpleLICM.cpp
+  AffineRecurrence.cpp
+  DerivedInductionVar.cpp
+  PLUGIN_TOOL
+  opt
+)
