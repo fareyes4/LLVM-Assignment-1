@@ -5,3 +5,4 @@ outputs/
 *.ll
 *.swp
 .DS_Store
+*:Zone.Identifier
